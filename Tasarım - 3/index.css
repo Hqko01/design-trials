@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 2s linear;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.contents .header {
+    flex: 100%;
+    background-color: #0a0a0a;
+    overflow: hidden;
+}
+.contents .header .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.contents .header .content .up {
+    position: relative;
+    flex: 100%;
+    margin-top: 1.5pc;
+    width: 100%;
+}
+
+.contents .header .content .up .logo {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10pc;
+    height: auto;
+}
+
+.contents .header .content .up .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.contents .header .content .up .text p {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    margin-top: 2pc;
+    color: white;
+    font-size: 2.5pc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: 5s;
+}
+
+.contents .header .content .down {
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contents .header .content .down .textBack p{
+    font-size: 12pc;
+    color: #252422;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.contents .car {
+    position: relative;
+    flex: 0;
+    background-color: #fffcf2;
+}
+
+.contents .car .carIMG {
+    position: absolute;
+    top: -60%;
+    width: 100%;
+    height: 15pc;
+    background-image: url('./Picture/Porsche.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
